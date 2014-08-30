@@ -1,4 +1,5 @@
 - hosts: celery
+  sudo: yes
   roles:
     - { role: celery }
 
