@@ -49,4 +49,7 @@ When that finishes if there wre no errors you can
 and get to the celery goodness.
 
 
+[Get Started](https://github.com/frodopwns/qwikcelery/tree/master/code)
+
+
 Thanks to [Michel Blanc](https://github.com/leucos) and the other [contributors](https://github.com/leucos/ansible-tuto/graphs/contributors) to [ansible-tuto](https://github.com/leucos/ansible-tuto) for the tutorial and free code.
