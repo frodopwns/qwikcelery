@@ -20,7 +20,7 @@
 - name: Push celerybeat init script
   copy: src=celerybeat dest=/etc/init.d/ mode=0777
 
-- name: Pushes configuration
+- name: Pushes celeryd configuration
   template: src=celeryd.j2 dest=/etc/default/celeryd mode=0640 owner=root group=root
 
 - name: Create celery group
@@ -32,5 +32,5 @@
 - name: Update user vagrant groups
   user: name=vagrant groups=celery append=yes
 
-- name: Creates directory
+- name: update directory
   file: path=/data/code state=directory owner=vagrant group=celery
