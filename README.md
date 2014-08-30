@@ -30,8 +30,7 @@ To follow this tutorial, you'll need to have your keys in VMs root's `authorized
 While this is not absolutely necessary (Ansible can use sudo, password authentication, 
 etc...), it will make things way easier.
 
-Ansible is perfect for this and we will use it for the job. However I won't
-explain what's happening for now. Just trust me.
+Ansible is perfect for this and we will use it for the job. From the qwikcelery project directory:
 
     ansible-playbook -c paramiko -i ips setup.yml --ask-pass --sudo
 
