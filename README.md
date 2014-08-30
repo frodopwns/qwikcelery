@@ -36,6 +36,8 @@ Ansible is perfect for this and we will use it for the job. From the qwikcelery 
 
 When asked for password, enter _vagrant_. If you get errors wait a minute and try again...sometimes this takes two tries for me.
 
+# Configuring the VM
+
 Once that command runs successfully you can setup the VM by running:
 
     ansible-playbook -i hosts celery.yaml
