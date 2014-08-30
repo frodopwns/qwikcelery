@@ -17,6 +17,10 @@ Vagrant.configure("2") do |config|
           v.name = name
           v.customize ["modifyvm", :id, "--memory", 200]
       end
+      config.vm.provision "ansible" do |ansible|
+          ansible.playbook = "celery.yml"
+          ansible.groups = { "celery" => ["host0.celery"] }
+      end
     end
   end
 end
