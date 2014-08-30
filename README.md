@@ -14,6 +14,10 @@ In order to run Vagrant, you need:
 
 This should be all it takes to set up Vagrant.
 
+You will also need to install ansible so that Vagrant can use playbooks to provision the VM
+
+    sudo pip install ansible
+
 Now bootstrap your virtual machines with the following command. Note that you do not need to download any "box" manually. This project already includes a `Vagrantfile` to get you up and running, and will get one for you if needed.
 
 `vagrant up`
