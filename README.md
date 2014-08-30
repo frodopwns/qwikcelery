@@ -34,7 +34,17 @@ Ansible is perfect for this and we will use it for the job. From the qwikcelery 
 
     ansible-playbook -c paramiko -i ips setup.yml --ask-pass --sudo
 
-When asked for password, enter _vagrant_. If you get "Connections refused" errors, please check the firewall settings of your machine.
+When asked for password, enter _vagrant_. If you get errors wait a minute and try again...sometimes this takes two tries for me.
+
+Once that command runs successfully you can setup the VM by running:
+
+    ansible-playbook -i hosts celery.yaml
+    
+When that finishes if there wre no errors you can 
+
+    vagrant up
+    
+and get to the celery goodness.
 
 
 Thanks to [Michel Blanc](https://github.com/leucos) and the other [contributors](https://github.com/leucos/ansible-tuto/graphs/contributors) to [ansible-tuto](https://github.com/leucos/ansible-tuto) for the tutorial and free code.
