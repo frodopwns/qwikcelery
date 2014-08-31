@@ -7,7 +7,7 @@ SSH into the VM like so:
 
     qwikcelery$ vagrant ssh
 
-Once logged in you will need to run this command to start teh celery daemon:
+Once logged in you will need to run this command to start the celery daemon:
 
     sudo /etc/init.d/celeryd start
 
@@ -30,7 +30,7 @@ run these commands:
     add.delay(10,4)
     quit()
 
-Not from the command line run `cat /var/log/celery/worker1.log`
+Now from the command line run `cat /var/log/celery/worker1.log`
 You should see the results of your task.
 
     [2014-08-30 06:16:40,493: INFO/MainProcess] Received task: myapp.add[1e880570-24b5-4bf8-8fe2-a72387ecb709]
