@@ -10,9 +10,13 @@
     - git
     - vim
     - rabbitmq-server
+    - redis-server
 
-- name: Install celery
-  pip: name=celery
+- name: Install Python packages
+  pip: name={{ item }}
+  with_items:
+    - celery
+    - redis
 
 - name: Push celeryd init script
   copy: src=celeryd dest=/etc/init.d/ mode=0777 owner=root group=root
