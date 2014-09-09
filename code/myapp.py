@@ -14,5 +14,9 @@ def add(x, y):
 def mult(x, y):
     return x * y
 
+@app.task
+def tsum(numbers):
+    return sum(numbers)
+
 if __name__ == '__main__':
     app.start()
