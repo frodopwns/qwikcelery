@@ -17,6 +17,7 @@
   with_items:
     - celery
     - redis
+    - bpython
 
 - name: Push celeryd init script
   copy: src=celeryd dest=/etc/init.d/ mode=0777 owner=root group=root
